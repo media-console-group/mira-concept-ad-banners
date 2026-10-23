@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=600">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=300,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>MIRA Pharmaceuticals, Inc. — Investor Relations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  MIRA Pharmaceuticals, Inc. — IR display banner, 300x600 — Concept D: Corporate site / brand-native.
+  Promotes: https://mira-ir-concept.pages.dev/
+  Styled from the company's own CORPORATE website (https://mirapharmaceuticals.com/), not the IR
+  landing page that Concepts A-C are built from: its white header bar and logo, Urbanist / Inter
+  type, violet and gold palette, gold pill badges, rounded cards, chevron pipeline tracker and
+  dark pill buttons. "Homepage in miniature": each slide is one module of the corporate site,
+  alternating purple and light grounds:
+    1 homepage hero + program cards -> 2 CIPN problem split -> 3 numbered cards on the purple band
+    -> 4 pipeline tracker.
+  Module classes (m-hero / m-prob / m-band / m-pipe) and the shared parts (d-badge, d-ico) live in
+  style.css; every colour is a :root token read from the site's theme CSS. Photos and artwork are
+  the site's own illustrations, cropped into assets/. Every claim comes from the project fact
+  sheet (.tmp/facts.md), never from the site's evergreen copy.
+-->
+
+<div id="banner" aria-label="MIRA Pharmaceuticals, Inc. investor relations advertisement">
+
+  <div id="slides">
+
+    <!-- Slide 1 — Overview -->
+    <section class="slide m-hero" data-index="0">
+      <!-- Module: corporate homepage hero (purple overlay over the 3D brain render, gold pill badge, white
+           Urbanist title, three glass program cards: status pill, name with underline, descriptor, status).
+           Facts: [HOME] tagline and card copy verbatim; [PR 05-14][PR 09-17] Ketamir-2 Phase 1 completed;
+           [PR 09-01][PR 08-06] MIRA-55 and SKNY-1 preclinical, advancing toward IND. -->
+      <img class="hero-photo" src="assets/slide-1.jpg" alt="Wireframe render of a human brain" width="600" height="483">
+      <div class="hero-copy">
+        <span class="d-badge">Next-Generation Oral Therapies</span>
+        <h2>New Medicines. Proven&nbsp;Targets.</h2>
+      </div>
+      <div class="hero-cards">
+        <article class="p-card">
+          <div class="p-id">
+            <span class="p-pill"><i class="p-dot ok"></i>Clinical</span>
+            <h3 class="ok">Ketamir-2</h3>
+          </div>
+          <div class="p-info">
+            <p class="p-desc">Chemotherapy-induced peripheral neuropathy (CIPN).</p>
+            <p class="p-stat">Phase 1 completed.</p>
+          </div>
+        </article>
+        <article class="p-card">
+          <div class="p-id">
+            <span class="p-pill"><i class="p-dot"></i>Preclinical</span>
+            <h3>MIRA-55</h3>
+          </div>
+          <div class="p-info">
+            <p class="p-desc">Inflammatory pain.</p>
+            <p class="p-stat">Advancing Toward IND</p>
+          </div>
+        </article>
+        <article class="p-card">
+          <div class="p-id">
+            <span class="p-pill"><i class="p-dot"></i>Preclinical</span>
+            <h3>SKNY-1</h3>
+          </div>
+          <div class="p-info">
+            <p class="p-desc">Obesity.</p>
+            <p class="p-stat">Advancing Toward IND</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Slide 2 — Burden -->
+    <section class="slide m-prob" data-index="1">
+      <!-- Module: corporate homepage "CIPN Can Outlast The Cancer Treatment" split (.module with gold badge,
+           slate Urbanist heading, lavender info box with white icon tile, nerve-network artwork whose empty
+           circle carries the "Cases Worldwide" counter).
+           Facts: [HOME] heading and lede verbatim; [PR 09-17] no FDA-approved therapy specifically indicated for
+           CIPN; [PR 06-17] ~3 million new persistent cases estimated annually worldwide. -->
+      <div class="prob-card">
+        <span class="d-badge">Ketamir-2</span>
+        <h2>CIPN Can Outlast The Cancer Treatment</h2>
+        <p class="lede">CIPN is nerve damage caused by the very cancer treatments meant to save&nbsp;lives.</p>
+        <div class="info">
+          <span class="d-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.2M12 7.9h.01"/></svg></span>
+          <p>No FDA-approved therapy is specifically indicated for CIPN.</p>
+        </div>
+        <figure class="cases">
+          <img src="assets/cases.webp" alt="Illustration of a nerve cell network" width="554" height="373">
+          <div class="count"><b>~3M</b><span>Cases<br>Worldwide</span></div>
+          <figcaption>Estimated new persistent CIPN cases per year.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Slide 3 — Proof -->
+    <section class="slide m-band" data-index="2">
+      <!-- Module: corporate Ketamir-2 page "Phase 1 Demonstrated Favorable Safety, Tolerability &amp;
+           Pharmacokinetics" numbered cards (dark icon tile, Urbanist title, outlined ghost numeral), set on the
+           site's purple pipeline-band gradient.
+           Facts: [PR 05-14] randomized, double-blind, placebo-controlled SAD/MAD, seven cohorts, healthy
+           volunteers; no serious adverse events or dose-limiting toxicities, events predominantly mild;
+           rapid oral absorption, dose-proportional Cmax, no major PK differences Day 1 vs Day 5. -->
+      <div class="band-head">
+        <span class="d-badge">Phase 1 Completed</span>
+        <h2>Phase 1 Demonstrated Favorable Safety &amp; Tolerability</h2>
+      </div>
+      <div class="num-cards">
+        <article class="num-card" data-n="1">
+          <span class="d-ico dark"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c0-3.2 2.5-5.2 5.5-5.2s5.5 2 5.5 5.2"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14.2c2.8-.2 4.8 1.6 4.8 4.3"/></svg></span>
+          <div><h3>Study Design</h3><p>Randomized, double-blind, placebo-controlled study in healthy volunteers across seven&nbsp;cohorts.</p></div>
+        </article>
+        <article class="num-card" data-n="2">
+          <span class="d-ico dark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.3-2.8 7.6-7 9.5-4.2-1.9-7-5.2-7-9.5V6l7-3z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/></svg></span>
+          <div><h3>Favorable Safety Profile</h3><p>No serious adverse events or <span class="nw">dose-limiting</span> toxicities reported. Adverse events were predominantly&nbsp;mild.</p></div>
+        </article>
+        <article class="num-card" data-n="3">
+          <span class="d-ico dark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v15.5h16"/><path d="M7.5 15l4-4.5 3 3L19 8"/></svg></span>
+          <div><h3>Predictable Pharmacokinetics</h3><p>Rapid oral absorption and dose-proportional Cmax, with consistent exposure across repeated&nbsp;dosing.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Slide 4 — What's next -->
+    <section class="slide m-pipe" data-index="3">
+      <!-- Module: corporate pipeline page "Development Pipeline" tracker (gold badge, white cards, chevron
+           stage bars: filled = completed stage, lavender = current/next, grey = later; gold-barred note;
+           asterisked target footnote).
+           Facts: [PR 09-17] Ketamir-2 Phase 1 completed, Phase 2a protocol at IRB review, site initiation targeted
+           1Q 2027; [PR 09-01] MIRA-55 IND submission targeted Q1 2027; [PR 08-06] SKNY-1 advancing toward IND,
+           no date in any release. -->
+      <span class="d-badge">Development Pipeline</span>
+      <h2>Advancing Three Programs With One&nbsp;Strategy</h2>
+      <div class="legend"><span>Discovery</span><span>Phase 3</span></div>
+      <article class="trk">
+        <div class="trk-top"><h3>Ketamir-2</h3><span>CIPN</span></div>
+        <div class="bar" aria-label="Discovery, IND-enabling, IND cleared and Phase 1 completed; Phase 2 next"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="now"></i><i></i></div>
+        <p class="trk-note">Phase 1 completed. Phase 2a site initiation targeted for <span class="nw">1Q 2027.*</span></p>
+      </article>
+      <article class="trk">
+        <div class="trk-top"><h3>MIRA-55</h3><span>Inflammatory pain</span></div>
+        <div class="bar" aria-label="Discovery completed; IND-enabling in progress"><i class="done"></i><i class="now"></i><i></i><i></i><i></i><i></i></div>
+        <p class="trk-note">IND submission targeted for <span class="nw">Q1 2027.*</span></p>
+      </article>
+      <article class="trk">
+        <div class="trk-top"><h3>SKNY-1</h3><span>Obesity</span></div>
+        <div class="bar" aria-label="Discovery completed; IND-enabling in progress"><i class="done"></i><i class="now"></i><i></i><i></i><i></i><i></i></div>
+        <p class="trk-note">Advancing toward IND.</p>
+      </article>
+      <p class="foot-note">*Forward-looking targets, subject to IRB review, site activation, IND-enabling work and other customary requirements.</p>
+    </section>
+
+  </div>
+
+  <!-- Persistent chrome — the corporate site's header, never rotates -->
+  <header id="top-bar" class="reveal" data-delay="0">
+    <img id="logo" src="assets/logo.png" alt="MIRA Pharmaceuticals" width="84" height="28">
+    <span id="ticker">NASDAQ:&nbsp;MIRA<i><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.2 8.8L8.8 3.2M4.4 3.2h4.4v4.4"/></svg></i></span>
+  </header>
+
+  <!-- Slider controls: round buttons, like the site's slider controls -->
+  <button type="button" class="nav-arrow" id="arrow-prev" aria-label="Previous slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 6 8l4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" class="nav-arrow" id="arrow-next" aria-label="Next slide">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l4 5-4 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div id="bottom-fixed" class="reveal" data-delay="4">
+    <div id="dots" role="tablist" aria-label="Slide selector">
+      <button class="dot active" data-index="0" aria-label="Slide 1: Overview"></button>
+      <button class="dot" data-index="1" aria-label="Slide 2: CIPN burden"></button>
+      <button class="dot" data-index="2" aria-label="Slide 3: Phase 1 results"></button>
+      <button class="dot" data-index="3" aria-label="Slide 4: Development pipeline"></button>
+    </div>
+
+    <!-- The corporate site's dark pill button: label, then a white circle with the arrow icon -->
+    <a href="#" id="cta">
+      <span>View Investors</span>
+      <i class="ic"><svg id="cta-arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.2 8.8L8.8 3.2M4.4 3.2h4.4v4.4"/></svg></i>
+    </a>
+
+    <!-- The corporate site's footer strip, carrying the required forward-looking-statements line -->
+    <p id="fls">Investigational, not FDA-approved. Forward-looking statements on Phase 2a and IND timing, financing and going-concern doubt. See SEC filings.</p>
+  </div>
+
+  <!-- Standard HTML5-ad click-tag plumbing -->
+  <div id="click-tag-wrapper"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
